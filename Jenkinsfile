@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('checking cpu') {
+      steps {
+        sh 'top'
+      }
+    }
+
   }
 }
